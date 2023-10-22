@@ -9,12 +9,12 @@ public class WordCountTest {
     @Test
     public void testWordCount() throws IOException {
         Map<String, Integer> wordCount = WordCount.countWordsInFile("/Users/lovepreetmultani/Downloads/adaptavist_test/src/main/resources/input.txt");
-        assertEquals(8, wordCount.get("the"));
-        assertEquals(4, wordCount.get("in"));
-        assertEquals(3, wordCount.get("java"));
-        assertEquals(2, wordCount.get("is"));
-        assertEquals(1, wordCount.get("programming"));
-        assertEquals(1, wordCount.get("language"));
+        assertEquals(5, wordCount.get("eget"));
+        assertEquals(4, wordCount.get("id"));
+        assertEquals(3, wordCount.get("arcu"));
+        assertEquals(2, wordCount.get("tempus"));
+        assertEquals(1, wordCount.get("mollis"));
+        assertEquals(1, wordCount.get("Sit"));
     }
 
     @Test
