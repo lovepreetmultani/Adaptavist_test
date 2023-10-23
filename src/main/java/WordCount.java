@@ -41,7 +41,7 @@ class WordCount {
         }
     }
     public static void main(String[] args) {
-        String filename = "/Users/lovepreetmultani/Downloads/adaptavist_test/src/main/resources/input.txt";
+        String filename = "/src/main/resources/input.txt";
         try {
             Map<String, Integer> wordCount = countWordsInFile(filename);
             if (wordCount != null) {

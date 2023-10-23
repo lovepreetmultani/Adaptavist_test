@@ -17,7 +17,7 @@ public class WordCountTest {
 
     @Test
     public void testWordCount() throws IOException {
-        Map<String, Integer> wordCount = WordCount.countWordsInFile("/Users/lovepreetmultani/Downloads/adaptavist_test/src/main/resources/input.txt");
+        Map<String, Integer> wordCount = WordCount.countWordsInFile("/src/main/resources/input.txt");
         assertEquals(6, wordCount.get("eget"));
         assertEquals(5, wordCount.get("in"));
         assertEquals(4, wordCount.get("id"));
@@ -30,7 +30,7 @@ public class WordCountTest {
 
     @Test
     public void testEmptyFile() throws IOException {
-        Map<String, Integer> result = wordCount.countWordsInFile("/Users/lovepreetmultani/Downloads/adaptavist_test/src/main/resources/empty_file.txt");
+        Map<String, Integer> result = wordCount.countWordsInFile("/src/main/resources/empty_file.txt");
         assertNull(result);
     }
 
