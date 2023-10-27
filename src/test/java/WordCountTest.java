@@ -39,7 +39,6 @@ public class WordCountTest {
         try {
             Map<String, Integer> wordCount = WordCount.countWordsInFile("non-existent-file.txt");
         } catch (IOException e) {
-            // We expect an exception for a non-existent file
             assertEquals("non-existent-file.txt (No such file or directory)", e.getMessage());
         }
     }
